@@ -3,6 +3,38 @@
 
 This microservice handles all notification-related functionality, including sending emails such as password recovery messages.
 
+
+## How to use 
+
+To get the system running:
+
+npx ts-node --files src/app.ts
+
+The system will listen locally on port 3001, and supports a POST request to send a password recovery email. With the following format:
+
+
+```json
+
+Request Body
+{
+  "email": "user@example.com",
+  "recoveryLink": "https://your-app.com/reset?token=12345"
+}
+
+Succesfull response:
+
+{
+  "message": "Recovery email sent to user@example.com"
+}
+
+Error response: 
+
+{
+  "error": "Failed to send email"
+}
+```
+
+
 ## Prerequisites
 
 ### Install Node.js
