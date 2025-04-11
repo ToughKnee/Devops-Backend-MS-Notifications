@@ -29,8 +29,6 @@ npm install express body-parser cookie-parser compression cors
 npm install -g @types/express @types/body-parser @types/cookie-parser @types/compression @types/cors
 npm install --save-dev @types/supertest jest ts-jest @types/jest
 npm install --save-dev @types/express
-
-
 ```
 
 ### Install nodemailer
